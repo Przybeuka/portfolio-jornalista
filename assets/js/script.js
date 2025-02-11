@@ -19,6 +19,13 @@ var swiper = new Swiper('.mySwiper', {
     },
 });
 
+const btnProjetos = document.getElementById('btnProjetos');
+btnProjetos.addEventListener('click', () => {
+    document.querySelector('#sobre-mim').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
 // ...
 fetch('data.json')
     .then(res => res.json())

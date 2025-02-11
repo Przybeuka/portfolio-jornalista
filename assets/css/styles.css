@@ -91,7 +91,7 @@ header {
 }
 
 .banner h1 {
-  font-family: var(--font-titulo);
+  font-family: var(--font-tertiary);
   font-size: 3rem;
   margin-top: 1rem;
   opacity: 0;
@@ -107,14 +107,14 @@ header {
 }
 
 .banner button {
-  font-family: var(--font-secondary);
-  font-size: 1rem;
+  font-size: 2.5rem;
+  width: 100px;
+  height: 100px;
   color: #fff;
   text-transform: uppercase;
   background: linear-gradient(to left, #4b134f, #c94b4b);
-  padding: 0.8rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 200%;
   cursor: pointer;
   opacity: 0;
   animation: fadeInUp 1s 1s forwards;
@@ -294,7 +294,7 @@ header {
 }
 
 .sobre-mim-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: var(--font-tertiary);
   font-size: 1.1rem;
@@ -328,6 +328,9 @@ header {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 100ms;
@@ -360,8 +363,8 @@ header {
 }
 
 .project-card a {
-  display: inline-block;
-  background: #c94b4b;
+  margin-top: auto;
+  background: linear-gradient(to left, #890292, #c94b4b, #c94b4b);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -377,7 +380,7 @@ header {
 /* EXPERIÊNCIAS */
 .my-experience {
   padding: 3rem 1rem;
-  background: #fff;
+  background: #eee;
   text-align: center;
 }
 
@@ -388,7 +391,7 @@ header {
 }
 
 .experience-grid {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -398,6 +401,11 @@ header {
   padding: 1rem;
   border-radius: 8px;
   text-align: left;
+  transition: 0.5s;
+}
+
+.exp-item:hover {
+  transform: scale(1.05);
 }
 
 .my-experience h3 {
