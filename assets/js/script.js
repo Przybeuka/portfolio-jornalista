@@ -30,6 +30,7 @@ fetch('data.json')
             const card = document.createElement('div');
             card.classList.add('project-card');
             card.innerHTML = `
+        <img src=${proj.imagem} alt="Posts" />
         <h3>${proj.titulo}</h3>
         <p>${proj['descrição']}</p>
         <a href="${proj.link}" target="_blank">Saiba Mais</a>
