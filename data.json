@@ -1,0 +1,54 @@
+{
+  "projetos": [
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    },
+    {
+      "link": "https://massa.com.br/noticias-economia/pagar-ipva-parana/",
+      "titulo": "Teste Titulo",
+      "descrição": "Descrição de um trabalho feito, peguei o link do Massa.com para exemplificar o exemplo exemplificado"
+    }
+  ],
+  "experiencias": [
+    {
+      "local": "Rádio Curitiba Mais FM",
+      "texto": "Trabalhei como repórter digital, produtora de conteúdo e locutora, apresentando o programa “As Mais Pedidas”"
+    },
+    {
+      "local": "Central Press Brazil",
+      "texto": "Assessora de imprensa, escrevendo releases, clippings e entrevistas, além de edição de vídeos."
+    }
+  ]
+}
