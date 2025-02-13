@@ -298,7 +298,7 @@ header {
 .sobre-mim-container {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: var(--font-tertiary);
+  font-family: var(--font-quaternary);
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
