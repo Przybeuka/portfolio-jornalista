@@ -361,9 +361,9 @@ header {
 }
 
 .project-card p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
-  font-family: var(--font-quaternary);
+  font-family: var(--font-secondary);
   text-align: justify;
 }
 
@@ -421,7 +421,7 @@ header {
 }
 
 .my-experience p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: var(--font-secondary);
   text-align: justify;
 }
