@@ -1,14 +1,8 @@
-/* ---------------------------------------------------
-   IMPORTS DE FONTES E ÍCONES (se quiser manter)
---------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Bebas+Neue&family=Estonia&family=Josefin+Slab:ital,wght@0,200;0,300;1,100&family=Mulish:ital,wght@0,300;1,200;1,300&family=Nunito:wght@300&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url('https://fonts.cdnfonts.com/css/bookerly');
 
-/* ---------------------------------------------------
-   RESET E VARIÁVEIS
---------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -19,16 +13,11 @@
 
 :root {
   --font-primary: "Baloo Da 2", serif;
-  /* título */
   --font-secondary: "Josefin Slab", serif;
-  /* subtítulo / descrições */
   --font-tertiary: "Bookerly", serif;
-  /* botões */
   --font-action: "Muli", serif;
-  /* destaque */
   --font-quaternary: "Open Sans Condensed", serif;
   --font-titulo: "Montserrat", sans-serif;
-  /* outro uso possível */
 }
 
 html {
@@ -72,7 +61,6 @@ header {
   }
 }
 
-/* Banner centralizado */
 .banner {
   position: absolute;
   top: 50%;
@@ -114,16 +102,21 @@ header {
   height: 80px;
   color: #fff;
   text-transform: uppercase;
-  background: linear-gradient(to left, #4b134f, #c94b4b);
+  background: linear-gradient(270deg, #4b134f, #c94b4b, #4b134f);
+  background-size: 400% 400%;
   border: none;
   border-radius: 200%;
   cursor: pointer;
   opacity: 0;
-  animation: fadeInUp 1s 1s forwards;
+  animation: fadeInUp 1s 1s forwards, gradientAnimation 5s ease infinite paused;
+  transition: width 1.5s, height 1.5s, color 1.5s;
 }
 
 .banner button:hover {
   color: black;
+  width: 90px;
+  height: 90px;
+  animation-play-state: running;
 }
 
 @keyframes fadeInUp {
@@ -138,11 +131,24 @@ header {
   }
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .container {
   display: flex;
 }
 
-/* Botão hambúrguer */
 .hamburgerMenu {
   width: 2rem;
   height: 2rem;
@@ -181,7 +187,6 @@ header {
   left: -1rem;
 }
 
-/* Linhas do ícone */
 .line {
   width: 100%;
   height: 0.1rem;
@@ -190,12 +195,10 @@ header {
   transition: all 2s;
 }
 
-/* Ao abrir o menu */
 .show-menu .hamburgerMenu {
   left: 16rem;
 }
 
-/* Transformar a 1ª e 3ª linha em 'X' */
 .show-menu #line1 {
   transform: rotate(45deg) translate(0.3rem, 0.45rem);
   background-color: black;
@@ -213,7 +216,6 @@ header {
   box-shadow: none;
 }
 
-/* Tooltip 'fechar' */
 .show-menu .hamburgerMenu:hover span {
   opacity: 1;
 }
@@ -249,11 +251,12 @@ header {
   font-family: var(--font-action);
   font-size: 1.8rem;
   color: rgb(32, 32, 32);
-  transition: color 1s;
+  transition: 1s;
 }
 
 .menu-link:hover {
   color: #b92e5c;
+  font-size: 2rem;
 }
 
 .social-media {
@@ -274,19 +277,26 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: background-color 1.7s;
+  transition: 1.7s;
 }
 
 .social-media i:hover {
   background-color: #e24444;
   opacity: 0.7;
+  transform: scale(1.5);
 }
 
-/* SOBRE MIM */
+.container-visualiza {
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 25%;
+}
+
 .sobre-mim {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #eee;
 }
 
 .sobre-mim h2 {
@@ -297,6 +307,13 @@ header {
 
 .sobre-mim-container {
   max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.sobre-mim-card {
   margin: 0 auto;
   font-family: var(--font-quaternary);
   font-size: 1.1rem;
@@ -308,7 +325,6 @@ header {
   margin-bottom: 10px;
 }
 
-/* PROJETOS */
 .my-projects {
   padding: 3rem 1rem;
   background-color: #eee;
@@ -332,13 +348,15 @@ header {
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1rem;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 100ms;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
+  min-height: 450px;
+  transition: 0.7s;
 }
 
 .project-card:hover {
@@ -349,11 +367,10 @@ header {
   width: 100%;
   max-height: 250px;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 .project-card h3 {
-  margin-bottom: 0.5rem;
+  margin: 0;
   font-family: var(--font-tertiary);
   font-size: 1rem;
   text-align: justify;
@@ -361,15 +378,94 @@ header {
 }
 
 .project-card p {
+  margin: 0;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
   font-family: var(--font-secondary);
   text-align: justify;
 }
 
 .project-card a {
   margin-top: auto;
-  background: linear-gradient(to left, #890292, #c94b4b, #c94b4b);
+  background: linear-gradient(to left, #95549b, #4a7f94);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: 1s;
+}
+
+.project-card a:hover {
+  opacity: 0.8;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.media-gallery {
+  padding: 3rem 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.media-gallery h2 {
+  font-family: var(--font-titulo);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.media-wrapper {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.media-wrapper iframe,
+.media-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.instagram-media {
+  background: #FFF !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15) !important;
+  margin: 1px !important;
+  max-width: 540px !important;
+  min-width: 326px !important;
+  padding: 0 !important;
+  width: calc(100% - 2px) !important;
+}
+
+.media-wrapper blockquote.instagram-media {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+.media-wrapper a {
+  margin-top: 1000px;
+  background: linear-gradient(to left, #890292, #c94b4b);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -378,11 +474,13 @@ header {
   transition: 0.3s;
 }
 
-.project-card a:hover {
-  opacity: 0.8;
+.gallery-item p {
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
-/* EXPERIÊNCIAS */
 .my-experience {
   padding: 3rem 1rem;
   background: #eee;
@@ -426,7 +524,6 @@ header {
   text-align: justify;
 }
 
-/* Footer */
 .site-footer {
   background-color: #333;
   color: #fff;

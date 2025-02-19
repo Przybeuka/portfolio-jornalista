@@ -5,19 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio - Valeska Macedo</title>
-
-  <!-- (1) CSS do Swiper (CDN) -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
-
-  <!-- (2) Fonte e Ícones (CDN) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-  <!-- (3) Seu CSS principal -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- (4) FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -25,7 +17,6 @@
 </head>
 
 <body>
-  <!-- HEADER -->
   <header>
     <div class="img-wrapper">
       <img src="assets/images/bg.jpg" alt="Fundo" />
@@ -36,15 +27,12 @@
       </div>
       <h1>Valeska Macedo</h1>
       <p>Jornalista | Repórter | Especialista em Jornalismo Digital</p>
-
-      <!-- Botão para ver projetos, sem <a> -->
       <button id="btnProjetos">
         <i class="fas fa-arrow-down"></i>
       </button>
     </div>
   </header>
 
-  <!-- CONTAINER + MENU HAMBÚRGUER -->
   <div class="container">
     <div class="hamburgerMenu">
       <div class="line" id="line1"></div>
@@ -52,7 +40,6 @@
       <div class="line" id="line3"></div>
       <span>fechar</span>
     </div>
-
     <aside class="sidebar">
       <nav>
         <ul class="menu">
@@ -76,47 +63,69 @@
       </div>
     </aside>
   </div>
-  <!-- FIM do seu código original -->
 
-  <!-- SESSÃO SOBRE MIM -->
-  <section id="sobre-mim" class="sobre-mim">
-    <h2>Sobre Mim</h2>
-    <div class="sobre-mim-container">
-      <p>
-        Bem-vindo(a)! Meu nome é <strong>Valeska Macedo</strong>, sou
-        Jornalista e atuo no mercado há mais de cinco anos. Tenho experiência em
-        em sites de notícias, rádio, assessoria de imprensa, coberturas,
-        redes sociais e produção/edição de conteúdos audiovisuais.
-      </p>
-      <p>
-        Sou bacharela em Jornalismo pela Universidade Positivo e pós-graduada
-        em Jornalismo Digital na Universidade Tuiuti do Paraná. Atualmente,
-        trabalho em Curitiba/PR como repórter no portal <a href="https://massa.com.br/autor/v.maior/"
-          target="_blank">Massa.com.br</a>,
-        do Grupo Massa - SBT. Produzo conteúdos, reportagens (com foco em otimização
-        utilizando SEO) e faço coberturas que vão para o site, Instagram e YouTube.
-      </p>
-    </div>
-  </section>
+  <div class="container-visualiza">
+    <!-- SOBRE MIM -->
+    <section id="sobre-mim" class="sobre-mim">
+      <div class="sobre-mim-container">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-mim-card">
+          <p>
+            Bem-vindo(a)! Meu nome é <strong>Valeska Macedo</strong>, sou Jornalista e atuo no mercado há mais de cinco
+            anos. Tenho experiência em em sites de notícias, rádio, assessoria de imprensa, coberturas, redes sociais e
+            produção/edição de conteúdos audiovisuais.
+          </p>
+          <p>
+            Sou bacharela em Jornalismo pela Universidade Positivo e pós-graduada em Jornalismo Digital na Universidade
+            Tuiuti do Paraná. Atualmente, trabalho em Curitiba/PR como repórter no portal <a
+              href="https://massa.com.br/autor/v.maior/" target="_blank">Massa.com.br</a>, do Grupo Massa - SBT. Produzo
+            conteúdos, reportagens (com foco em otimização utilizando SEO) e faço coberturas que vão para o site,
+            Instagram
+            e YouTube.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <!-- SESSÃO PROJETOS -->
-  <section id="projetos" class="my-projects">
-    <h2>Projetos</h2>
-    <div class="project-grid"><!-- SEÇÃO DE PROJETOS DO JSON --></div>
-  </section>
+    <!-- PROJETOS -->
+    <section id="projetos" class="my-projects">
+      <h2>Projetos</h2>
+      <div class="project-grid"></div>
+    </section>
 
+    <!-- GALERIA -->
+    <section class="media-gallery">
+      <h2>Galeria</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="media-wrapper">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/C7aoydoO6mR/?igsh=MWx5NzVvMm5qZGx0cQ%3D%3D"
+              data-instgrm-version="14">
+            </blockquote>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-wrapper">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/C7cg3tvOfVS/?igsh=Mjc4ajhueTBoOXN4"
+              data-instgrm-version="14">
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- SESSÃO EXPERIÊNCIAS -->
-  <section id="experiencias" class="my-experience">
-    <h2>Experiências</h2>
-    <div class="experience-grid"><!-- SEÇÃO DE EXPERIÊNCIAS DO JSON --></div>
-  </section>
+    <!-- EXPERIÊNCIAS -->
+    <section id="experiencias" class="my-experience">
+      <h2>Experiências</h2>
+      <div class="experience-grid"></div>
+    </section>
+  </div>
 
-  <!-- RODAPÉ -->
   <footer class="site-footer">
     <div class="footer-container">
       <p>&copy; 2025 - Todos os direitos reservados | Valeska Macedo</p>
-
       <div class="footer-links">
         <a href="/assets/public/Currículo - Valeska Macedo.pdf" download="Currículo.pdf" title="Currículo">
           <i class="fas fa-file"></i>
@@ -131,12 +140,8 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- (4) JS do Swiper (CDN) -->
+  <script async src="//www.instagram.com/embed.js"></script>
   <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- (5) Seu script principal -->
   <script src="assets/js/script.js"></script>
 </body>
 
