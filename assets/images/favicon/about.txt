@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Noto Serif Balinese
+- Font Title: Trirong
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/notoserifbalinese/v20/QdVKSS0-JginysQSRvuCmUMB_wVeQAxXRbgJdhapcUU.ttf
+- Font Source: https://fonts.gstatic.com/s/trirong/v15/7r3GqXNgp8wxdOdOr4wi2aZg-ug.ttf
 - Font License: undefined)
