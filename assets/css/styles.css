@@ -343,7 +343,6 @@ header {
   object-fit: cover;
 }
 
-
 .my-projects {
   padding: 3rem 1rem;
   background-color: #eee;
@@ -405,8 +404,8 @@ header {
 
 .project-card a {
   margin-top: auto;
-  background: linear-gradient(to left, #95549b, #4a7f94);
-  color: #fff;
+  background: linear-gradient(to left, #cfcfcf, #ffffff);
+  color: #000000;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-transform: uppercase;

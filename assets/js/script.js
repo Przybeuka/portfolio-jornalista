@@ -2,23 +2,6 @@ document.querySelector('.hamburgerMenu').addEventListener('click', () => {
     document.querySelector('.container').classList.toggle('show-menu');
 });
 
-// 2) Inicializa o Swiper
-var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 2,
-    spaceBetween: 20,
-    slidesPerGroup: 2,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
 const btnProjetos = document.getElementById('btnProjetos');
 btnProjetos.addEventListener('click', () => {
     document.querySelector('#sobre-mim').scrollIntoView({
@@ -61,8 +44,8 @@ fetch('data.json')
 
 // Caso use esse Swiper para galeria
 var swiperGallery = new Swiper('.mySwiperGallery', {
-    slidesPerView: 2,
-    spaceBetween: 10,
+    slidesPerView: 1,
+    spaceBetween: 0,
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -74,8 +57,11 @@ var swiperGallery = new Swiper('.mySwiperGallery', {
     },
     // Responsivo
     breakpoints: {
+        400: {
+            slidesPerView: 1
+        },
         768: {
-            slidesPerView: 3
+            slidesPerView: 2
         },
         1024: {
             slidesPerView: 4
