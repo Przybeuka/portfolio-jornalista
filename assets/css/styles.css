@@ -288,7 +288,6 @@ header {
 
 .container-visualiza {
   max-width: 1200px;
-  background-color: #fff;
   margin: 0 auto;
 }
 
@@ -436,7 +435,7 @@ header {
 .project-card a {
   margin-top: auto;
   border: 1px solid #000;
-  background: linear-gradient(to left, #cfcfcf, #ffffff);
+  background: linear-gradient(to left, #cfcfcf, #a9a9a9);
   color: #000000;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -447,8 +446,9 @@ header {
 
 .project-card a:hover {
   opacity: 0.8;
-  color: #000;
-  transform: scale(1.05);
+  background: linear-gradient(to left, #e72300, #ff00b3);
+  color: #ffffff;
+  transform: scale(1.08);
 }
 
 .media-gallery {
@@ -604,9 +604,10 @@ header {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: 0.6s;
 }
 
 .footer-links a:hover {
-  color: #1e90ff;
+  color: #bf006c;
+  transform: scale(1.45);
 }
