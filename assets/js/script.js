@@ -9,7 +9,6 @@ btnProjetos.addEventListener('click', () => {
     });
 });
 
-// ...
 fetch('data.json')
     .then(res => res.json())
     .then(data => {
@@ -42,10 +41,9 @@ fetch('data.json')
     })
     .catch(err => console.error('Erro ao carregar data.json:', err));
 
-// Caso use esse Swiper para galeria
 var swiperGallery = new Swiper('.mySwiperGallery', {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 10,
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -64,7 +62,7 @@ var swiperGallery = new Swiper('.mySwiperGallery', {
             slidesPerView: 2
         },
         1024: {
-            slidesPerView: 4
+            slidesPerView: 3
         }
     }
 });
