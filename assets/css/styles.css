@@ -289,12 +289,14 @@ header {
 .container-visualiza {
   max-width: 1200px;
   margin: 0 auto;
+  background: #eee;
+  background: -webkit-linear-gradient(to right, #cccccc, #e4e4e4, #F2F2F2);
+  background: linear-gradient(to right, #cccccc, #e4e4e4, #F2F2F2);
 }
 
 .sobre-mim {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: #eee;
 }
 
 .sobre-mim h2 {
@@ -375,7 +377,6 @@ header {
 
 .my-projects {
   padding: 3rem 1rem;
-  background-color: #eee;
   text-align: center;
 }
 
@@ -452,7 +453,6 @@ header {
 
 .media-gallery {
   padding: 3rem 1rem;
-  background-color: #eee;
   text-align: center;
 }
 
@@ -532,7 +532,6 @@ header {
 
 .my-experience {
   padding: 3rem 1rem;
-  background: #eee;
   text-align: center;
 }
 
