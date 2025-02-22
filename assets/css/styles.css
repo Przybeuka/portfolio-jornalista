@@ -435,8 +435,8 @@ header {
 .project-card a {
   margin-top: auto;
   border: 1px solid #000;
-  background: linear-gradient(to left, #cfcfcf, #a9a9a9);
-  color: #000000;
+  background: linear-gradient(to right, #536976, #292e49);
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-transform: uppercase;
@@ -446,8 +446,7 @@ header {
 
 .project-card a:hover {
   opacity: 0.8;
-  background: linear-gradient(to left, #e72300, #ff00b3);
-  color: #ffffff;
+  background: linear-gradient(to right, #ba5370, #f4e2d8);
   transform: scale(1.08);
 }
 
