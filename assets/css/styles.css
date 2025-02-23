@@ -634,10 +634,10 @@ header {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
-  transition: 0.6s;
+  transition: 1s;
 }
 
 .footer-links a:hover {
-  color: #bf006c;
+  color: #fa1239;
   transform: scale(1.45);
 }
