@@ -404,7 +404,7 @@ header {
   flex-direction: column;
   gap: 0.5rem;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px grey;
   transition: transform 100ms;
   border-radius: 8px;
   padding: 1rem;
@@ -534,7 +534,7 @@ header {
   background: #FFF !important;
   border: 0 !important;
   border-radius: 3px !important;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0px 0px 12px grey !important;
   margin: 1px !important;
   max-width: 540px !important;
   min-width: 326px !important;
@@ -584,11 +584,13 @@ header {
 
 .exp-item {
   background: #f9f9f9;
+  box-shadow: 0px 0px 12px grey;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 8px;
   text-align: left;
   transition: 0.5s;
+
 }
 
 .exp-item:hover {
