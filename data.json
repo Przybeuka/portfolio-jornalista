@@ -1,6 +1,24 @@
 {
   "projetos": [
     {
+      "imagem": "https://cdn.massa.com.br/uploads/2025/08/estrangeiros-no-parana-1024x691.jpg",
+      "link": "https://massa.com.br/economia/estrangeiros-no-parana/",
+      "titulo": "O impacto da força estrangeira no crescimento industrial do Paraná",
+      "descrição": "Com foco na inserção de trabalhadores estrangeiros na indústria, a reportagem evidencia como essa força de trabalho tem contribuído para o desenvolvimento do setor no Paraná. O trabalho foi reconhecido no 10º Prêmio Sistema Fiep de Jornalismo, na categoria “Destaque Regional Leste”."
+    },
+    {
+      "imagem": "https://cdn.massa.com.br/uploads/2025/11/tarifaco-parana-1024x691.jpg",
+      "link": "https://massa.com.br/economia/tarifaco-parana/",
+      "titulo": "Impactos globais, inovação local: empresas paranaenses transformam desafios em novas oportunidades",
+      "descrição": "Em meio às mudanças do cenário internacional, empresas do Paraná reforçam gestão, tecnologia e diversificação para sustentar o crescimento."
+    },
+    {
+      "imagem": "https://sebraepr.com.br/experienciasturisticas/wp-content/uploads/Revoadas-dos-Guaras.jpg",
+      "link": "https://www.youtube.com/@TCC-ameacados-pr",
+      "titulo": "Ameaçados: a luta pela proteção dos animais em risco de extinção no Paraná",
+      "descrição": "Trabalho de Conclusão de Curso: produzi uma websérie com três episódios sobre instituições que atuam na preservação da fauna ameaçada de extinção do Paraná. Além de dar visibilidade ao tema, o conteúdo proporciona debates quanto a importância dos animais e da biodiversidade do estado."
+    },
+    {
       "imagem": "https://cdn.massa.com.br/uploads/2024/11/fotografos-barigui.jpg",
       "link": "https://massa.com.br/parana/curitiba/fotografos-barigui/",
       "titulo": "Fotógrafos encerram atividades no Parque Barigui após denúncias",
@@ -31,22 +49,10 @@
       "descrição": "A reportagem ambiental mostra a relevância do Paraná no setor de florestas plantadas. O destaque do segmento enfatiza o papel do estado na busca por sustentabilidade, sendo um dos principais produtores florestais do Brasil."
     },
     {
-      "imagem": "https://sebraepr.com.br/experienciasturisticas/wp-content/uploads/Revoadas-dos-Guaras.jpg",
-      "link": "https://www.youtube.com/@TCC-ameacados-pr",
-      "titulo": "Ameaçados: a luta pela proteção dos animais em risco de extinção no Paraná",
-      "descrição": "Trabalho de Conclusão de Curso: produzi uma websérie com três episódios sobre instituições que atuam na preservação da fauna ameaçada de extinção do Paraná. Além de dar visibilidade ao tema, o conteúdo proporciona debates quanto a importância dos animais e da biodiversidade do estado."
-    },
-    {
       "imagem": "https://cdn.massa.com.br/uploads/2024/11/mae-filho-aprovados-ufpr.jpg",
       "link": "https://massa.com.br/noticias-de-hoje/mae-e-filho-autismo-aprovados-ufpr/",
       "titulo": "Mãe e filho com autismo são aprovados no mesmo curso na UFPR",
       "descrição": "Uma história que muito boa de se contar! O curso de pedagogia da Universidade Federal do Paraná (UFPR) teve dois curitibanos da mesma família aprovados: mãe e filho. A reportagem ficou entre as mais lidas do Massa.com.br!"
-    },
-    {
-      "imagem": "https://cdn.massa.com.br/uploads/2024/11/educacao-financeira-jovens-e1666105409211.jpeg",
-      "link": "https://massa.com.br/noticias-de-hoje/quase-50-da-geracao-z-nao-tem-controle-financeiro-veja-6-dicas-para-administrar-gastos/",
-      "titulo": "Quase 50% da ‘Geração Z’ não tem controle financeiro; veja 6 dicas para administrar gastos",
-      "descrição": "Jovens com idades entre 18 a 25 anos, conhecidos como ‘Geração Z’, não fazem controle dos próprios gastos. A reportagem traz dados sobre educação financeira, dicas e personagens que enfrentam essa situação."
     }
   ],
   "experiencias": [
