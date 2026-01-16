@@ -48,84 +48,79 @@ fetch('data.json')
     .catch(err => console.error('Erro ao carregar data.json:', err));
 
 var swiperGallery = new Swiper('.mySwiperGallery', {
+    // Configuração Padrão (Mobile First - Telas < 640px)
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    coverflowEffect: {
-        rotate: 0,  // Ângulo de rotação dos cards laterais (em graus)
-        stretch: 0,  // Esticamento dos slides (0 = sem esticar)
-        depth: 300,  // Profundidade 3D (distância entre slides)
-        modifier: 2,  // Multiplicador do efeito coverflow
-        slideShadows: true,  // Sombra nos slides
-    },
+    slidesPerView: "auto", // Importante: deixa o CSS controlar a largura base
+    initialSlide: 1, // Começa no segundo slide para estética
     loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+    speed: 600, // Transição mais suave
+
+    // Efeito 3D ajustado para não quebrar no mobile
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
     },
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+
     pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: true,
+        dynamicBullets: true, // Bolinhas dinâmicas ocupam menos espaço
     },
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    on: {
-        slideChange: function () {
-            // Esconde todas as legendas primeiro
-            const allSlides = this.slides;
-            allSlides.forEach(slide => {
-                const description = slide.querySelector('.slide-description');
-                if (description) {
-                    description.style.opacity = '0';
-                    description.style.transform = 'translateY(30px)';
-                }
-            });
 
-            // Mostra a legenda apenas do slide ativo
-            const activeSlide = this.slides[this.activeIndex];
-            if (activeSlide) {
-                const description = activeSlide.querySelector('.slide-description');
-                if (description) {
-                    setTimeout(() => {
-                        description.style.opacity = '1';
-                        description.style.transform = 'translateY(0)';
-                    }, 100);
-                }
+    // Breakpoints (Pontos de quebra)
+    breakpoints: {
+        // Quando a tela for >= 640px (Tablet pequeno)
+        640: {
+            slidesPerView: 2,
+            coverflowEffect: {
+                depth: 150,
+                modifier: 1.5,
+            }
+        },
+        // Quando a tela for >= 1024px (Desktop)
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            coverflowEffect: {
+                rotate: 5, // Gira um pouco apenas no desktop
+                depth: 300,
+                modifier: 1,
             }
         }
     },
-    breakpoints: {
-        400: {
-            slidesPerView: 1,
-            effect: 'slide',
-            spaceBetween: 10
+
+    // Eventos para legenda (Mantido sua lógica, apenas limpa)
+    on: {
+        slideChangeTransitionStart: function () {
+            // Oculta legendas ao começar a mover
+            document.querySelectorAll('.slide-description').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+            });
         },
-        768: {
-            slidesPerView: 3,
-            effect: 'coverflow',
-            spaceBetween: 20,
-            coverflowEffect: {
-                rotate: 15,  // Ângulo de rotação
-                stretch: 0,
-                depth: 150,  // Menos profundidade em tablets
-                modifier: 1.3,
-                slideShadows: true,
-            }
-        },
-        1024: {
-            slidesPerView: 3,
-            effect: 'coverflow',
-            spaceBetween: 30,
-            coverflowEffect: {
-                rotate: 15,  // Ângulo de rotação
-                stretch: 0,
-                depth: 200,  // Mais profundidade em desktop
-                modifier: 1.5,
-                slideShadows: true,
+        slideChangeTransitionEnd: function () {
+            // Mostra legenda do ativo ao parar
+            const activeSlide = this.slides[this.activeIndex];
+            const desc = activeSlide.querySelector('.slide-description');
+            if (desc) {
+                desc.style.opacity = '1';
+                desc.style.transform = 'translateY(0)';
             }
         }
     }

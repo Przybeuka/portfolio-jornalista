@@ -65,8 +65,6 @@ header {
 }
 
 .img-profile img {
-  width: 250px;
-  height: 250px;
   border-radius: 50%;
   opacity: 0;
   animation: fadeInUp 1s 0.4s forwards;
@@ -77,7 +75,6 @@ header {
 
 .banner h1 {
   font-family: var(--font-tertiary);
-  font-size: 3rem;
   margin-top: 1rem;
   opacity: 0;
   animation: fadeInUp 1s 0.6s forwards;
@@ -85,7 +82,6 @@ header {
 
 .banner p {
   font-family: var(--font-secondary);
-  font-size: 2rem;
   margin: 1rem 0;
   opacity: 0;
   animation: fadeInUp 1s 0.8s forwards;
@@ -93,9 +89,6 @@ header {
 }
 
 .banner button {
-  font-size: 2rem;
-  width: 80px;
-  height: 80px;
   color: #fff;
   text-transform: uppercase;
   background: linear-gradient(270deg, #4b134f, #c94b4b, #4b134f);
@@ -110,9 +103,21 @@ header {
 
 .banner button:hover {
   color: black;
-  width: 90px;
-  height: 90px;
   animation-play-state: running;
+}
+
+@media (min-width: 640px) {
+  .banner button:hover {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner button:hover {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -282,56 +287,120 @@ header {
   transform: scale(1.5);
 }
 
+/* --- CSS DO CARROSSEL CORRIGIDO --- */
+
 .container-visualiza {
   max-width: 1400px;
   margin: 0 auto;
   border-radius: 1.5rem;
-  background: #eee;
-  background: -webkit-linear-gradient(to right, #dfdfdf, #e4e4e4, #F2F2F2);
+  /* Mantive seu gradiente */
   background: linear-gradient(to right, #dfdfdf, #e4e4e4, #F2F2F2);
+  overflow: hidden;
+  /* Importante para não vazar rolagem horizontal */
 }
 
 .photo-gallery {
-  padding: 1rem 1rem;
+  padding: 2rem 0;
+  /* Mais respiro */
   text-align: center;
 }
 
 .mySwiperGallery {
   width: 100%;
-  margin: 0;
+  padding-bottom: 3rem;
+  /* Espaço para a paginação */
 }
 
 .mySwiperGallery .swiper-slide {
-  width: 100%;
-  transition: all 0.4s ease;
-  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  /* Largura base para o cálculo do Swiper */
+  /* Removemos larguras fixas em % que conflitam com o JS */
 }
 
-.mySwiperGallery .swiper-slide-active {
-  width: 30% !important;
-  z-index: 10;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .mySwiperGallery .swiper-slide {
-    width: 80%;
-    filter: blur(1px);
-  }
-
-  .mySwiperGallery .swiper-slide-active {
-    width: 100% !important;
-    transform: scale(1.1);
-    filter: blur(0);
-  }
-}
-
+/* O container da imagem */
 .slide-content {
   position: relative;
   width: 100%;
-  height: 400px;
+  aspect-ratio: 3/4;
+  /* Garante proporção retangular bonita em qualquer tela */
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Ajuste de altura/largura para Desktop */
+@media (min-width: 1024px) {
+  .slide-content {
+    height: 450px;
+    /* Altura fixa para desktop */
+    width: 100%;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Efeito de destaque no slide ativo */
+.swiper-slide-active .slide-content {
+  box-shadow: 0 8px 20px rgba(107, 33, 168, 0.4);
+  /* Sombra roxa sutil */
+}
+
+.swiper-slide-active img {
+  transform: scale(1.1);
+  /* Zoom suave na imagem ativa */
+}
+
+/* Legenda */
+.slide-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  padding: 2rem 1rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.swiper-slide-active .slide-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botões de navegação ajustados para mobile */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background: rgba(107, 33, 168, 0.7);
+  /* Roxo translúcido */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* Esconde setas em telas muito pequenas para limpar a visão */
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    /* Mostra apenas em tablets/desktop */
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .swiper-slide-active .slide-content {
@@ -357,8 +426,8 @@ header {
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 40%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
   color: white;
-  padding: 3rem 2rem 2rem;
-  font-size: 1.2rem;
+  padding: 1.5rem 1rem 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 1), 0 0 15px rgba(0, 0, 0, 0.8);
@@ -366,6 +435,20 @@ header {
   transform: translateY(30px);
   transition: all 0.5s ease;
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .slide-description {
+    padding: 2rem 1.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide-description {
+    padding: 3rem 2rem 2rem;
+    font-size: 1.2rem;
+  }
 }
 
 /* Legenda sempre ativa no card central (ativo) */
