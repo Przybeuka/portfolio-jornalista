@@ -42,22 +42,46 @@
 </head>
 
 <body class="bg-white dark:bg-slate-950 font-display text-slate-700 dark:text-slate-300">
-  <header>
+  <header class="relative flex items-center justify-center min-h-[100dvh] overflow-hidden">
+
     <div class="img-wrapper">
       <img src="assets/images/bg1.jpg" alt="Fundo" />
     </div>
-    <div class="banner px-4">
-      <div class="img-profile">
-        <img id="img-perf" src="assets/images/perfil.jpeg" alt="Perfil"
-          class="w-32 h-32 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64" />
+
+    <div class="banner container mx-auto px-4 z-10 flex flex-col items-center justify-center text-center">
+
+      <div class="img-profile mb-6 sm:mb-8">
+        <img id="img-perf" src="assets/images/perfil.jpeg" alt="Perfil" class="rounded-full shadow-2xl border-4 border-white/20 
+                 w-32 h-32 
+                 sm:w-40 sm:h-40 
+                 md:w-52 md:h-52 
+                 lg:w-64 lg:h-64 
+                 object-cover" />
       </div>
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Valeska Macedo</h1>
-      <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">Jornalista | Editora | Especialista em
-        Jornalismo Digital</p>
-      <button id="btnProjetos"
-        class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-lg sm:text-xl md:text-2xl">
-        <i class="fas fa-arrow-down"></i>
+
+      <h1 class="font-bold text-white mb-2 drop-shadow-lg
+                 text-3xl 
+                 sm:text-4xl 
+                 md:text-5xl 
+                 lg:text-6xl">
+        Valeska Macedo
+      </h1>
+
+      <p class="text-gray-200 font-light mb-8 max-w-2xl drop-shadow-md
+                text-base 
+                sm:text-lg 
+                md:text-xl 
+                lg:text-2xl">
+        Jornalista | Editora | Especialista em Jornalismo Digital
+      </p>
+
+      <button id="btnProjetos" class="flex items-center justify-center bg-gradient-to-r from-purple-700 to-pink-600 text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-200
+               w-12 h-12 text-lg
+               sm:w-14 sm:h-14 sm:text-xl
+               md:w-16 md:h-16 md:text-2xl">
+        <i class="fas fa-arrow-down animate-bounce"></i>
       </button>
+
     </div>
   </header>
 
