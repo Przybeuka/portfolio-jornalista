@@ -263,36 +263,28 @@ header {
   transform: scale(1.5);
 }
 
-/* --- CSS DO CARROSSEL CORRIGIDO --- */
-
 .container-visualiza {
   max-width: 1400px;
   margin: 0 auto;
   border-radius: 1.5rem;
-  /* Mantive seu gradiente */
   background: linear-gradient(to right, #dfdfdf, #e4e4e4, #F2F2F2);
   overflow: hidden;
-  /* Importante para não vazar rolagem horizontal */
 }
 
 .photo-gallery {
   padding: 2rem 0;
-  /* Mais respiro */
   text-align: center;
 }
 
 .mySwiperGallery {
   width: 100%;
   padding-bottom: 3rem;
-  /* Espaço para a paginação */
 }
 
 .mySwiperGallery .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
-  /* Largura base para o cálculo do Swiper */
-  /* Removemos larguras fixas em % que conflitam com o JS */
 }
 
 /* O container da imagem */
@@ -300,7 +292,6 @@ header {
   position: relative;
   width: 100%;
   aspect-ratio: 3/4;
-  /* Garante proporção retangular bonita em qualquer tela */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -518,10 +509,79 @@ header {
   opacity: 1;
 }
 
-/* Cards de projetos - garantir altura uniforme e alinhamento */
-.project-grid>div {
-  display: flex;
-  flex-direction: column;
+.bg-section {
+  background-color: #ffffff;
+}
+
+.dark .bg-section {
+  background-color: #0f172a;
+  /* Cor do fundo no modo escuro */
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+.dark .section-title {
+  color: #ffffff;
+}
+
+.card-projeto {
+  background: #f8fafc;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Ajuste Modo Escuro */
+.dark .card-projeto {
+  background: #1e293b;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito ao passar o mouse no Card */
+.card-projeto:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #b92e5c;
+  /* Sua cor de destaque */
+}
+
+/* Efeito na imagem dentro do card */
+.card-projeto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-projeto:hover img {
+  transform: scale(1.1);
+}
+
+/* Brilho que "passa" pelo card no hover */
+.card-projeto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: 0.6s;
+}
+
+.card-projeto:hover::after {
+  left: 100%;
 }
 
 /* Estilos específicos para embed do Instagram */
