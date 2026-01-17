@@ -1,5 +1,28 @@
-document.querySelector('.hamburgerMenu').addEventListener('click', () => {
-    document.querySelector('.container').classList.toggle('show-menu');
+// Seleciona os elementos
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const menuLinks = document.querySelectorAll('.menu-link');
+const overlay = document.querySelector('.menu-overlay');
+
+// Função para alternar o menu
+function toggleMenu() {
+    document.body.classList.toggle('show-menu');
+}
+
+// Evento de clique no botão
+hamburgerBtn.addEventListener('click', toggleMenu);
+
+// Evento de clique no overlay (fecha se clicar fora)
+if (overlay) {
+    overlay.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
+}
+
+// Fecha o menu ao clicar em qualquer link (Melhor experiência UX)
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('show-menu');
+    });
 });
 
 const btnProjetos = document.getElementById('btnProjetos');
