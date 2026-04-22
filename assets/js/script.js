@@ -40,9 +40,14 @@ fetch('data.json')
         const projectGrid = document.querySelector('.project-grid');
         data.projetos.forEach(proj => {
             const card = document.createElement('div');
-            card.classList.add('bg-background-light', 'dark:bg-background-dark', 'rounded-xl', 'shadow-md', 'overflow-hidden', 'flex', 'flex-col');
+            card.classList.add(
+                'bg-background-light', 'dark:bg-background-dark', 'rounded-xl', 'shadow-md', 'overflow-hidden', 'flex', 'flex-col',
+                'group', 'cursor-pointer', 'transition-all', 'duration-300', 'ease-out',
+                'hover:-translate-y-2', 'hover:shadow-xl', 'hover:shadow-black/10',
+                'border', 'border-transparent', 'hover:border-slate-200', 'dark:hover:border-slate-700'
+            );
             card.innerHTML = `
-        <img src="${proj.imagem}" alt="${proj.titulo}" class="w-full h-48 object-cover rounded-t-xl" />
+        <img src="${proj.imagem}" alt="${proj.titulo}" class="w-full h-48 object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-105" />
         <div class="p-6 flex flex-col flex-grow">
           <div class="h-20 flex items-center justify-center mb-4">
             <h3 class="font-bold text-base text-slate-800 dark:text-slate-200 uppercase tracking-wide text-center">${proj.titulo}</h3>
@@ -52,7 +57,7 @@ fetch('data.json')
           </div>
           <a href="${proj.link}" target="_blank" class="block w-full text-center bg-slate-700 dark:bg-slate-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-500 transition-colors duration-300">SAIBA MAIS</a>
         </div>
-      `;
+    `;
             projectGrid.appendChild(card);
         });
 
