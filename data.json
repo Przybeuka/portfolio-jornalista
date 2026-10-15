@@ -1,10 +1,28 @@
 {
   "projetos": [
     {
+      "imagem": "https://media.gazetadopovo.com.br/2026/09/04111316/queijaria-meu-proposito-1280x720.jpeg.webp",
+      "link": "https://www.gazetadopovo.com.br/agronegocio/produtora-rural-cria-queijaria-meu-proposito-premiada-emprega-familia/",
+      "titulo": "Para não vender vacas, produtora rural cria queijaria premiada que emprega toda a família",
+      "descrição": "A reportagem conta a história de uma produtora rural paranaense que transformou a produção artesanal de queijos em um negócio familiar premiado. A matéria aborda os desafios do empreendedorismo no campo, a valorização da produção artesanal e como a iniciativa se tornou uma fonte de renda e oportunidades para toda a família."
+    },
+    {
       "imagem": "https://cdn.massa.com.br/uploads/2026/01/hospitais-filantropicos-curitiba.jpg",
       "link": "https://massa.com.br/saude/hospitais-filantropicos-curitiba/",
       "titulo": "Hospitais filantrópicos sustentam a maior parte da alta complexidade no SUS do Paraná",
       "descrição": "Mostrando como hospitais filantrópicos sustentam a maior parte da alta complexidade no SUS do Paraná, a reportagem destaca histórias reais de pacientes e o papel essencial dessas instituições, responsáveis por mais de 50% dos atendimentos no estado. O conteúdo também aborda desafios financeiros e a importância histórica dessas unidades para a saúde pública. Com a reportagem, conquistei o 1º lugar no 7° Prêmio Femipa de Jornalismo."
+    },
+    {
+      "imagem": "https://media.gazetadopovo.com.br/2026/09/02123909/bicicletas-eletricas-fiscalizacao-1280x720.jpg.webp",
+      "link": "https://www.gazetadopovo.com.br/economia/bicicletas-eletricas-ganham-ruas-conflitos-no-transito/",
+      "titulo": "Baratas e sem CNH, bicicletas elétricas ganham as ruas e aumentam conflitos no trânsito",
+      "descrição": "Com a popularização das bicicletas elétricas, a reportagem analisa o crescimento desse mercado como alternativa de mobilidade urbana e os conflitos gerados no trânsito. A matéria aborda a substituição de outros meios de transporte pelas e-bikes, os desafios da fiscalização e da regulamentação desses veículos e os impactos da expansão nas ruas de Curitiba, especialmente para a segurança viária e a convivência entre motoristas, ciclistas e pedestres."
+    },
+    {
+      "imagem": "https://media.gazetadopovo.com.br/2026/07/06092839/calcadas-huly.jpg.webp",
+      "link": "https://www.gazetadopovo.com.br/parana/acessibilidade-bairros-curitiba/",
+      "titulo": "Um bairro de Curitiba tem 91% das vias com rampas para cadeirantes e outro não tem nenhuma",
+      "descrição": "A matéria analisa as desigualdades na infraestrutura de acessibilidade entre os bairros de Curitiba, com base em dados do Censo 2022 e de levantamentos do Ippuc. A matéria destaca as diferenças na oferta de rampas para cadeirantes e calçadas, evidenciando os desafios para garantir mobilidade e autonomia às pessoas com deficiência. Também aborda propostas previstas na revisão do Plano Diretor para ampliar a acessibilidade e tornar a cidade mais inclusiva."
     },
     {
       "imagem": "https://cdn.massa.com.br/uploads/2024/11/fotografos-barigui.jpg",
@@ -25,16 +43,10 @@
       "descrição": "Durante o Natal, profissionais de diferentes áreas seguem trabalhando para manter serviços essenciais em Curitiba. A reportagem retrata a rotina de quem passa a data em plantões, conciliando escalas e celebrações, e traz histórias de motoristas, enfermeiros, artistas e cuidadores que encontram outras formas de viver o período, mesmo longe da família."
     },
     {
-      "imagem": "https://cdn.massa.com.br/uploads/2025/10/idoso-correndo-maratona.jpg",
-      "link": "https://massa.com.br/noticia-boa/idoso-correndo-maratona/",
-      "titulo": "Atleta de 79 anos completa meia maratona e inspira novas gerações",
-      "descrição": "Um idoso de 79 anos chamou atenção ao completar uma meia maratona em Foz do Iguaçu, mostrando que a idade não é limite para a prática esportiva. A reportagem destaca a trajetória do atleta, que começou a correr recentemente e já acumula desafios, além de trazer o impacto inspirador do feito, que viralizou nas redes sociais e incentivou outras pessoas a se manterem ativas."
-    },
-    {
-      "imagem": "https://cdn.massa.com.br/uploads/2024/11/aulas-karate.jpeg",
-      "link": "https://massa.com.br/noticias-de-hoje/microempreendedor-mei-curitiba/",
-      "titulo": "Pequenos negócios de Curitiba fazem grandes ações para comunidades carentes",
-      "descrição": "A formalização de microempreendedores em Curitiba revela desafios e oportunidades para quem busca estabilidade e crescimento. A reportagem mostra como o registro como MEI impacta a rotina de trabalhadores, facilita o acesso a benefícios e incentiva o desenvolvimento de pequenos negócios, além de destacar histórias reais de quem decidiu empreender. Com a matéria, fui finalista do 11° Prêmio Sebrae de Jornalismo."
+      "imagem": "https://cdn.massa.com.br/uploads/2026/05/empreendedorismo-em-curitiba.jpg",
+      "link": "https://massa.com.br/servicos-informacoes-uteis/empreendedorismo-em-curitiba/",
+      "titulo": "Curitiba vive expansão do empreendedorismo fora do eixo central e bairros ganham protagonismo",
+      "descrição": "A reportagem apresenta o cenário do empreendedorismo em Curitiba, destacando oportunidades para quem deseja abrir o próprio negócio e os desafios enfrentados por pequenos empreendedores. A matéria reúne informações e orientações úteis para quem busca investir, formalizar uma empresa e aproveitar as possibilidades do mercado local. Com a reportagem, conquistei o 3° lugar no Prêmio Sebrae de Jornalismo."
     },
     {
       "imagem": "https://cdn.massa.com.br/uploads/2024/11/mae-filho-aprovados-ufpr.jpg",
@@ -43,40 +55,36 @@
       "descrição": "A história de mãe e filho com autismo aprovados juntos na UFPR ganhou grande repercussão. A reportagem acompanha a trajetória de dedicação, desafios e conquistas até a aprovação, destacando a importância do apoio familiar e da inclusão na educação, e se destacou entre as mais acessadas do Massa.com.br."
     },
     {
-      "imagem": "https://cdn.massa.com.br/uploads/2024/11/setor-florestal-parana.jpg",
-      "link": "https://massa.com.br/noticias-do-dia/setor-florestal-parana/",
-      "titulo": "De árvore para produtos de madeira: o cultivo florestal como aliado na fabricação sustentável",
-      "descrição": "O Paraná se destaca como uma potência no setor florestal, liderando a produção de madeira e reforçando o papel da silvicultura na economia e na sustentabilidade. A reportagem mostra como o cultivo de florestas plantadas impulsiona diferentes cadeias produtivas, gera empregos e reduz a pressão sobre áreas nativas, além de destacar iniciativas que unem inovação e responsabilidade ambiental."
-    },
-    {
       "imagem": "https://cdn.massa.com.br/uploads/2025/08/estrangeiros-no-parana-1024x691.jpg",
       "link": "https://massa.com.br/economia/estrangeiros-no-parana/",
       "titulo": "O impacto da força estrangeira no crescimento industrial do Paraná",
       "descrição": "Com foco na inserção de trabalhadores estrangeiros na indústria, a reportagem evidencia como essa força de trabalho tem contribuído para o desenvolvimento do setor no Paraná. O trabalho foi reconhecido no 10º Prêmio Sistema Fiep de Jornalismo, na categoria “Destaque Regional Leste”."
     },
     {
-      "imagem": "https://cdn.massa.com.br/uploads/2024/11/emprego-para-ex-presidiario.jpg",
-      "link": "https://massa.com.br/noticias-de-hoje/emprego-para-ex-presidiario/",
-      "titulo": "Inclusão produtiva: iniciativa de empresa muda a vida de pessoas privadas de liberdade",
-      "descrição": "A dificuldade de inserção de ex-presidiários no mercado de trabalho em Curitiba evidencia barreiras como preconceito e falta de oportunidades. A reportagem mostra iniciativas que buscam promover a reintegração social por meio do emprego, além de destacar histórias de quem tenta recomeçar após cumprir pena, enfrentando desafios para conquistar espaço e reconstruir a própria trajetória."
+      "imagem": "https://media.gazetadopovo.com.br/2026/06/01112850/porto-paranagua.jpg.webp",
+      "link": "https://www.gazetadopovo.com.br/parana/por-que-paranagua-se-tornou-uma-das-cidades-mais-violentas-do-brasil/",
+      "titulo": "Por que Paranaguá se tornou uma das cidades mais violentas do Brasil",
+      "descrição": "Paranaguá está entre as cidades mais violentas do Brasil, cenário que envolve disputas entre facções criminosas, tráfico de drogas e desafios na segurança pública. A reportagem investiga os fatores por trás dos índices de violência no município, considerando as particularidades da região portuária e os obstáculos enfrentados pelas autoridades no combate à criminalidade."
     },
     {
       "imagem": "https://sebraepr.com.br/experienciasturisticas/wp-content/uploads/Revoadas-dos-Guaras.jpg",
       "link": "https://www.youtube.com/@TCC-ameacados-pr",
       "titulo": "Ameaçados: a luta pela proteção dos animais em risco de extinção no Paraná",
       "descrição": "Como Trabalho de Conclusão de Curso, produzi uma websérie com três episódios sobre instituições dedicadas à preservação da fauna ameaçada de extinção no Paraná. Além de ampliar a visibilidade do tema, o conteúdo promove reflexões sobre a importância dos animais e da biodiversidade para o equilíbrio ambiental no estado."
-    },
-    {
-      "imagem": "https://cdn.massa.com.br/uploads/2025/05/colegio-cooperativa-da-lapa.jpg",
-      "link": "https://massa.com.br/servicos-informacoes-uteis/cooperativas-parana/",
-      "titulo": "Cooperativas do Paraná: dos recordes na economia ao berço de um futuro sustentável",
-      "descrição": "O cooperativismo no Paraná se consolida como um dos pilares da economia e do desenvolvimento social, reunindo milhões de cooperados e movimentando bilhões. A reportagem destaca como essas organizações geram emprego, renda e impacto direto nas comunidades, além de investir em educação, sustentabilidade e ações sociais, reforçando o modelo como alternativa de crescimento coletivo e transformação econômica no estado."
     }
   ],
   "experiencias": [
     {
-      "local": "Editora | Grupo Massa/SBT (2021 - presente)",
-      "texto": "Iniciei minha trajetória como estagiária, fui efetivada como produtora, atuei como repórter e atualmente sou editora no Grupo Massa. Produzo reportagens para o <a href=\"https://massa.com.br/autor/v.maior/\" target=\"_blank\">Massa.com.br</a> com foco em otimização para SEO, realizo coberturas de eventos e sou responsável pela equipe de repórteres, produtores e estagiários. Também atuo na publicação de conteúdos nas redes sociais e na edição de fotos e vídeos."
+      "local": "Repórter | Gazeta do Povo (2026 - presente)",
+      "texto": "Atualmente, apuro e produzo reportagens especiais para a editoria de Economia da Gazeta do Povo, com foco em temas como agronegócio, indústria, comércio e serviços."
+    },
+    {
+      "local": "Editora | Grupo Massa/SBT (2021 - 2026)",
+      "texto": "Iniciei minha trajetória como estagiária, fui efetivada como produtora, atuei como repórter e fui editora no Grupo Massa. Produzi reportagens para o <a href=\"https://massa.com.br/autor/v.maior/\" target=\"_blank\">Massa.com.br</a> com foco em otimização para SEO, realizei coberturas de eventos e fui responsável pela equipe de repórteres, produtores e estagiários. Também atuei na publicação de conteúdos nas redes sociais e na edição de fotos e vídeos."
+    },
+    {
+      "local": "Assessora de Imprensa | Central Press Brazil (2021)",
+      "texto": "Atuei na assessoria de imprensa de empresas e instituições, elaborando releases, notas e conteúdos para divulgação em veículos de comunicação."
     },
     {
       "local": "Produtora | Rádio Curitiba Mais FM (2020 - 2021)",
